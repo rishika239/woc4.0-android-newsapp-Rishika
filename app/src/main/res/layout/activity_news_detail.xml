@@ -4,29 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/grey"
+    android:layout_marginTop="15dp"
+    android:background="@color/white"
     tools:context=".NewsDetailActivity">
 
-
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+        android:id="@+id/idToolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:title="News App"
-        app:titleTextColor="@color/yellow"
-        android:background="@color/dark_grey"
+        android:layout_height="45dp"
         android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
         android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
-        app:titleMargin="5dp"/>
+        android:background="@color/black"
+        app:title="News App"
+        app:titleMargin="5dp"
+        app:titleTextColor="@color/white">
+
+    </androidx.appcompat.widget.Toolbar>
 
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/toolbar"
-        android:layout_above="@id/readfullnews">
+        android:layout_below="@id/idToolbar"
+        android:layout_above="@id/idBtnReadNews">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -34,20 +36,22 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="150dp"
                 android:scaleType="centerCrop"
-                android:id="@+id/imagenewsdetail"
+                android:id="@+id/idIVNews"
                 android:layout_margin="3dp"
                 android:padding="3dp"/>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Title"
+                android:fontFamily="@font/g_bold"
                 android:textStyle="bold"
-                android:textColor="@color/yellow"
+                android:textColor="@color/black"
                 android:textSize="20dp"
-                android:id="@+id/titlenewsdetail"
-                android:layout_below="@+id/imagenewsdetail"
+                android:id="@+id/idTVTitle"
+                android:layout_below="@+id/idIVNews"
                 android:padding="4dp"
                 android:layout_margin="4dp"/>
 
@@ -55,20 +59,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Sub Description"
-                android:textColor="@color/white"
+                android:fontFamily="@font/g_light"
+                android:textColor="@color/black"
                 android:textSize="18sp"
-                android:id="@+id/subdescnewsdetail"
-                android:layout_below="@+id/titlenewsdetail"
+                android:id="@+id/idTVSubDesc"
+                android:layout_below="@+id/idTVTitle"
                 android:padding="4dp"
                 android:layout_margin="4dp"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/g_light"
                 android:text="Content"
-                android:textColor="@color/white"
-                android:id="@+id/contentnewsdetail"
-                android:layout_below="@+id/subdescnewsdetail"
+                android:textColor="@color/black"
+                android:id="@+id/idTVContent"
+                android:layout_below="@+id/idTVSubDesc"
                 android:padding="4dp"
                 android:layout_margin="4dp"/>
 
@@ -81,11 +87,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:id="@+id/readfullnews"
+        android:id="@+id/idBtnReadNews"
         android:layout_marginStart="20dp"
         android:layout_marginBottom="20dp"
         android:layout_marginEnd="20dp"
         android:text="Read Full News"
+        android:fontFamily="@font/g_bold"
         android:textAllCaps="false"
         android:textSize="15dp"/>
 

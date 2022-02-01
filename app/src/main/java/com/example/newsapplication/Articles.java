@@ -1,13 +1,17 @@
 package com.example.newsapplication;
 
 public class Articles {
-    private String title,description,url,urlToImage,content;
+    private String title;
+    private String description;
+    private String urlToImage;
+    private String url;
+    private String content;
 
-    public Articles(String title, String description, String url, String urlToImage, String content) {
+    public Articles(String title, String description, String urlToImage, String url, String content) {
         this.title = title;
         this.description = description;
-        this.url = url;
         this.urlToImage = urlToImage;
+        this.url = url;
         this.content = content;
     }
 
@@ -27,20 +31,20 @@ public class Articles {
         this.description = description;
     }
 
-    public String getUrl() {
-        return url;
-    }
-
-    public void setUrl(String url) {
-        this.url = url;
-    }
-
     public String getUrlToImage() {
         return urlToImage;
     }
 
     public void setUrlToImage(String urlToImage) {
         this.urlToImage = urlToImage;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 
     public String getContent() {
@@ -51,3 +55,4 @@ public class Articles {
         this.content = content;
     }
 }
+

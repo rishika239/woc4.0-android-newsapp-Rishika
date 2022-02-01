@@ -3,10 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/background_shape.xml" value="0.26461538461538464" />
+        <entry key="app/src/main/res/drawable/gredient.xml" value="0.2484375" />
+        <entry key="app/src/main/res/drawable/ic_share.xml" value="0.27870370370370373" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_news_detail.xml" value="0.2526041666666667" />
+        <entry key="app/src/main/res/layout/activity_news_detail.xml" value="0.24993834871191956" />
+        <entry key="app/src/main/res/layout/categories_rv_item.xml" value="0.2824074074074074" />
         <entry key="app/src/main/res/layout/headline_list_items.xml" value="0.2557291666666667" />
         <entry key="app/src/main/res/layout/news_list_items.xml" value="0.29074074074074074" />
+        <entry key="app/src/main/res/layout/news_rv_item.xml" value="0.23229166666666667" />
+        <entry key="app/src/main/res/layout/toolbar.xml" value="0.16770833333333332" />
+        <entry key="app/src/main/res/menu/menu.xml" value="0.30512820512820515" />
+        <entry key="app/src/main/res/menu/menu_news.xml" value="0.25" />
+        <entry key="app/src/main/res/menu/navigation_menu.xml" value="0.30512820512820515" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.18385416666666668" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.15925925925925927" />
       </map>
     </option>
   </component>

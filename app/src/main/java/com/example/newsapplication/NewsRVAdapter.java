@@ -15,28 +15,28 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-public class NewsAdaptor extends RecyclerView.Adapter<NewsAdaptor.ViewHolder> {
+public class NewsRVAdapter extends RecyclerView.Adapter<NewsRVAdapter.ViewHolder> {
     private ArrayList<Articles> articlesArrayList;
     private Context context;
 
-    public NewsAdaptor(ArrayList<Articles> articlesArrayList, Context context) {
+    public NewsRVAdapter(ArrayList<Articles> articlesArrayList, Context context) {
         this.articlesArrayList = articlesArrayList;
         this.context = context;
     }
 
     @NonNull
     @Override
-    public NewsAdaptor.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.news_list_items,parent,false);
-        return new NewsAdaptor.ViewHolder(view);
+    public NewsRVAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.news_rv_item,parent,false);
+        return new NewsRVAdapter.ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull NewsAdaptor.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull NewsRVAdapter.ViewHolder holder, int position) {
         Articles articles = articlesArrayList.get(position);
-        holder.subtitle.setText(articles.getDescription());
-        holder.title.setText(articles.getTitle());
-        Picasso.get().load(articles.getUrlToImage()).into(holder.news);
+        holder.subTitleTV.setText(articles.getDescription());
+        holder.titleTV.setText(articles.getTitle());
+        Picasso.get().load(articles.getUrlToImage()).into(holder.newsIV);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -57,13 +57,13 @@ public class NewsAdaptor extends RecyclerView.Adapter<NewsAdaptor.ViewHolder> {
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
-        private TextView title,subtitle;
-        private ImageView news;
+        private TextView titleTV,subTitleTV;
+        private ImageView newsIV;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            title=itemView.findViewById(R.id.newsheadline);
-            subtitle=itemView.findViewById(R.id.subheading);
-            news=itemView.findViewById(R.id.newsimage);
+            titleTV=itemView.findViewById(R.id.idTVNewsHeadline);
+            subTitleTV=itemView.findViewById(R.id.idTVSubTitle);
+            newsIV=itemView.findViewById(R.id.idIVNews);
         }
     }
 }

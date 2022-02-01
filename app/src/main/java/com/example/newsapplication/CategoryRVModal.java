@@ -1,9 +1,9 @@
 package com.example.newsapplication;
 
-public class CategoryModel {
+public class CategoryRVModal {
     private String category,categoryImageUrl;
 
-    public CategoryModel(String category, String categoryImageUrl) {
+    public CategoryRVModal(String category, String categoryImageUrl) {
         this.category = category;
         this.categoryImageUrl = categoryImageUrl;
     }

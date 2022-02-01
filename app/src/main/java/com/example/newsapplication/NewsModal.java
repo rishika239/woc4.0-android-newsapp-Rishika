@@ -2,17 +2,24 @@ package com.example.newsapplication;
 
 import java.util.ArrayList;
 
-public class NewsModel {
-    private int totalResult;
+public class NewsModal {
+    private int totalResults;
     private String status;
+
+    public NewsModal(int totalResults, String status, ArrayList<Articles> articles) {
+        this.totalResults = totalResults;
+        this.status = status;
+        this.articles = articles;
+    }
+
     private ArrayList<Articles> articles;
 
     public int getTotalResult() {
-        return totalResult;
+        return totalResults;
     }
 
     public void setTotalResult(int totalResult) {
-        this.totalResult = totalResult;
+        this.totalResults = totalResult;
     }
 
     public String getStatus() {
@@ -31,9 +38,5 @@ public class NewsModel {
         this.articles = articles;
     }
 
-    public NewsModel(int totalResult, String status, ArrayList<Articles> articles) {
-        this.totalResult = totalResult;
-        this.status = status;
-        this.articles = articles;
-    }
+
 }

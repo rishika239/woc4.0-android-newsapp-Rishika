@@ -6,8 +6,8 @@ import retrofit2.http.Url;
 
 public interface RetrofitAPI {
     @GET
-    Call<NewsModel> getAllNews(@Url String url);
+    Call<NewsModal> getAllNews(@Url String url);
 
     @GET
-    Call<NewsModel> getNewsByCategory(@Url String url);
+    Call<NewsModal> getNewsByCategory(@Url String url);
 }
